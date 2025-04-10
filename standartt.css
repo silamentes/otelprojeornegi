@@ -1,0 +1,415 @@
+/* MENU KISMI*/ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 40px; 
+    background-color: white; 
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px; /* Logo büyüklüğü */
+    width: auto;
+}
+
+.navbar {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #8a898a; /* İnce çizgi ekleniyor */
+    padding-bottom: 10px; /* Çizginin menüye yakınlığı ayarlanıyor */
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Menü öğeleri arasında boşluk */
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu li:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px;
+    color: black;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1000;
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+.submenu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+.asubmenu:hover .submenu {
+    display: block;
+}
+
+
+/*BODY KISMI*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.standart-oda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: #5b4b41; 
+    color: white;
+}
+
+
+
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #222;
+}
+
+/* Metin kutusu */
+.text-content {
+    width: 50%;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/*bodyy bittiiiii
+ODALAR KISMI*/
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Odalar Bölümü */
+.rooms {
+    padding: 20px;
+    text-align: center;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.room {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #222;
+    transition: transform 0.3s ease;
+}
+
+.room img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #000;
+}
+
+/* Oda Bilgileri */
+.info {
+    position: absolute;
+    bottom: 0;
+    background: #222;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.room:hover .info {
+    transform: translateY(0);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+/*ODA ÖZELLİKLERİ*/
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+/* Oda Özellikleri Bölümü */
+.room-features {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #222;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Özellik Kutuları */
+.feature {
+    text-align: center;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: scale(1.2);
+}
+
+.feature p {
+    margin: 0;
+}
+
+/* Foto Galeriiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
+.photo-gallery {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px; /* Galeri genişliği artırıldı */
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.gallery {
+    display: grid; /* Flex yerine grid kullanıldı */
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun oluştur */
+    gap: 10px; /* Görseller arasında boşluk */
+    justify-content: center; /* Görseller ortalanır */
+}
+
+.gallery img {
+    width: 100%; /* Hücre içinde tam genişlik kaplar */
+    height: auto; /* Görsel oranı korunur */
+    border: 1px solid #ccc; /* İnce kenarlık */
+    padding: 5px;
+    background-color: #fff;
+    transition: transform 0.2s; /* Hover için animasyon */
+}
+
+/* Hover Efekti */
+.gallery img:hover {
+    transform: scale(1.05); /* Görsel üzerine gelindiğinde büyür */
+    border-color: #000; /* Kenarlık siyah olur */
+}
+
+
+/*KAYAAAANNNRESİİİİİİİİİİİİİİİİMMMMM*/
+
+#section5{
+    width: 100%;
+    height: 350px;
+    background: url(odalarfotolar/overlay.png), url(odalarfotolar/hotelbanner.jpg);
+    background-attachment: fixed; /* arka planım arkada sabit kalsın*/
+    background-size: cover;
+    position: relative;
+}
+
+#section5 .icerik{
+    position: absolute;/*position:absolute; özelliği olan bir eleman en yakın
+pozisyon değeri relative olan elemana göre kendini konumlandırır.*/
+    width: 100%;
+    top: 50%;
+    transform:translateY(-50%); /*dikeyde ortalama x,y,z'ye göre ortalanıyor.*/
+    text-align: center;
+}
+
+#section5 .icerik h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#section5 .icerik p{
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#section5 .icerik a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 35px;
+    background: #e4c0a8;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#section5 .icerik a:hover{/*üzerine geldiğimizde butonun yanması*/
+    background-color: #d3a27f;
+}
+
+
+
+
+/*FOOTTEEERRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+footer{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+footer .sosyal{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer a{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer a[title="facebook"]::before{
+    content: ' ';
+    background: url("logo/facebook.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+footer a[title="twitter"]::before{
+    content: ' ';
+    background: url("logo/twitter.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+footer a[title="instagram"]::before{
+    content: ' ';
+    background: url("logo/insta.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}

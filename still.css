@@ -1,0 +1,483 @@
+/* MENU KISMI*/ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Logo ve menü arasındaki düzen için */
+    align-items: center;
+    padding: 20px 40px; /* Üst ve yanlarda boşluklar */
+    background-color: white; /* Beyaz arka plan */
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px; /* Logoyu büyütmek için boyut artırıldı */
+    width: auto; /* Oran korundu */
+}
+
+.navbar {
+    flex: 1; /* Menü ortada kalması için yer paylaştırma */
+    display: flex;
+    justify-content: center; /* Menü tam ortada */
+    align-items: center;
+    border-bottom: 3px solid #8a898a; /* İnce çizgi ekleniyor */
+    padding-bottom: 10px; /* Çizginin menüye yakınlığı ayarlanıyor */
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Menü öğeleri arasında boşluk */
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Ayrıcı stil */
+.menu li:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px;
+    color: black;
+}
+
+/* Alt menü stili */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1000;
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+.submenu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+.asubmenu:hover .submenu {
+    display: block;
+}
+
+
+
+
+/* MENU BİTTİ */
+
+/*body cssssss*/
+/* Genel ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Otel tanıtım bölümü */
+.hotel-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Yazıyı sağa alır */
+    padding: 50px;
+    background-color: #3a1d1d;
+    background-image: url('odalarfotolar/lunainfo.jpg'); /* Arka plan görseli */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px; /* Sabit yükseklik */
+    color: white;
+}
+
+/* Metin kutusu */
+.content {
+    max-width: 40%; /* Yazı genişliği */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right; /* Yazıyı sağa hizalar */
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+
+
+/*bodyy bittiiiii
+ODALAR KISMI*/
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Odalar Bölümü */
+.rooms {
+    padding: 20px;
+    text-align: center;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.room {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #222;
+    transition: transform 0.3s ease;
+}
+
+.room img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #000;
+}
+
+/* Oda Bilgileri */
+.info {
+    position: absolute;
+    bottom: 0;
+    background: #222;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.room:hover .info {
+    transform: translateY(0);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+/*ODA ÖZELLİKLERİ*/
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+/* Oda Özellikleri Bölümü */
+.room-features {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #222;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Özellik Kutuları */
+.feature {
+    text-align: center;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: scale(1.2);
+}
+
+.feature p {
+    margin: 0;
+}
+
+/* Foto Galeriiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
+.photo-gallery {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px; /* Galeri genişliği artırıldı */
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.gallery {
+    display: grid; /* Flex yerine grid kullanıldı */
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun oluştur */
+    gap: 10px; /* Görseller arasında boşluk */
+    justify-content: center; /* Görseller ortalanır */
+}
+
+.gallery img {
+    width: 100%; /* Hücre içinde tam genişlik kaplar */
+    height: auto; /* Görsel oranı korunur */
+    border: 1px solid #ccc; /* İnce kenarlık */
+    padding: 5px;
+    background-color: #fff;
+    transition: transform 0.2s; /* Hover için animasyon */
+}
+
+/* Hover Efekti */
+.gallery img:hover {
+    transform: scale(1.05); /* Görsel üzerine gelindiğinde büyür */
+    border-color: #000; /* Kenarlık siyah olur */
+}
+
+
+/*KAYAAAANNNRESİİİİİİİİİİİİİİİİMMMMM*/
+
+#section5{
+    width: 100%;
+    height: 350px;
+    background: url(odalarfotolar/overlay.png), url(odalarfotolar/hotelbanner.jpg);
+    background-attachment: fixed; /* arka planım arkada sabit kalsın*/
+    background-size: cover;
+    position: relative;
+}
+
+#section5 .icerik{
+    position: absolute;/*position:absolute; özelliği olan bir eleman en yakın
+pozisyon değeri relative olan elemana göre kendini konumlandırır.*/
+    width: 100%;
+    top: 50%;
+    transform:translateY(-50%); /*dikeyde ortalama x,y,z'ye göre ortalanıyor.*/
+    text-align: center;
+}
+
+#section5 .icerik h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#section5 .icerik p{
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#section5 .icerik a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 35px;
+    background: #e4c0a8;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#section5 .icerik a:hover{/*üzerine geldiğimizde butonun yanması*/
+    background-color: #d3a27f;
+}
+
+
+
+
+/*FOOTTEEERRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+footer{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+footer .sosyal{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer a{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer a[title="facebook"]::before{
+    content: ' ';
+    background: url("logo/facebook.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+footer a[title="twitter"]::before{
+    content: ' ';
+    background: url("logo/twitter.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+footer a[title="instagram"]::before{
+    content: ' ';
+    background: url("logo/insta.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .hotel-info, .room-container, .feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-container {
+        gap: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .room, .feature {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 1.8rem; /* Mobilde daha küçük başlık */
+    }
+
+    .content p {
+        font-size: 0.9rem; /* Mobilde daha küçük paragraf yazısı */
+    }
+}
+
+/* Tablet ve küçük ekranlar için */
+@media (max-width: 1024px) {
+    .hotel-info {
+        padding: 30px; /* Tabletler için padding ayarlaması */
+    }
+
+    .content {
+        max-width: 90%; /* Tabletlerde biraz daha geniş */
+    }
+}
+
+/* Masaüstü için büyük ekranlar */
+@media (min-width: 1025px) {
+    .hotel-info {
+        padding: 50px 80px; /* Daha büyük ekranlar için padding */
+    }
+
+    .content {
+        max-width: 40%; /* Daha küçük ekranlarda biraz daraltalım */
+    }
+
+    .content h1 {
+        font-size: 3rem; /* Daha büyük başlık */
+    }
+
+    .content p {
+        font-size: 1.2rem; /* Daha büyük paragraf yazısı */
+    }
+}
+
